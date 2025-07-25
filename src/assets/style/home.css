@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+  background-color: #000000;
+  padding-top: 8rem; /* compensação da altura do header fixo */
+}
+
+
+section.skills {
+  margin-top: 150px; /* começa depois do "About" */
+}
+
+/*============================== HEADER =========================================== */
+.header {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* ============================  MENU =========================================*/
+.menu-line {
+  width: 40px;
+  height: 36px; /* espaço para 3 linhas + espaçamento */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribui as linhas igualmente */
+  cursor: pointer;
+  position: fixed;
+  right:10px;
+}
+
+/* Linhas do menu */
+.menu-line .line {
+  width: 30px;
+  height: 4px;
+  background-color: #fffdfd;
+  border-radius: 2px;
+  /* display block por padrão */
+}
+
+/* MENU */
+.menu {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(247, 244, 244);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+/* Fundo das linguagens*/
+.languages { 
+  top: 0;
+  z-index: 999;
+  background-color: #030303;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  display: none;
+  justify-content: flex-end;
+  
+}
+
+/* Animação*/
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.languages.fade-in {
+  animation: fadeInMenu 0.4s ease forwards;
+}
+
+@keyframes fadeOutMenu {
+  from {
+    opacity: 111;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.languages.fade-out {
+  animation: fadeOutMenu 0.4s ease forwards;
+}
+
+.languages.active {
+  transform: translateY(-50%) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Botão de tradução */
+.languages button {
+  border: none;
+  background-color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Imagem das bandeiras */
+.languages img { 
+  width:100px;
+  height: 100px;
+}
+
+.menu img { 
+  width: 60px;
+  height: 60px;
+}
+
+/* ========================== CONTEÚDO PRINCIPAL ==================================== */
+section.main {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-inline: auto;
+  gap: 40px;
+  background-color: #000000;
+  min-height: 400px; 
+}
+
+/* Sobre mim */
+.about {
+  max-width: 800px; 
+  padding: 32px 28px;
+  background-color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: left; 
+}
+
+:is(.about:hover) {
+  transform: translateY(-4px);
+  background-color: #000000;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+/* Breve apresentação*/
+.about p {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.about strong {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* FOTO */
+.ph {
+  display: flex;
+  flex-direction: column; /* 🔥 ESSENCIAL: coloca os itens em coluna (imagem em cima, ícones embaixo) */
+  align-items: center;
+  gap: 12px;
+  margin-top: 90px;
+  margin-right: 15px;
+}
+
+.ph img {
+  border: none; /* remove a borda */
+  border-radius: 10%; /* opcional: arredondamento sutil */
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: none; /* remove a sombra */
+}
+
+/* Ícones embaixo da foto */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffcc00; /* cor ao passar o mouse */
+}
+
+
+/*=============================== HABILIDADES =====================================*/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 20px;
+  min-height: 400px;
+  background-color: #ffff;
+}
+
+/* TITULO MINHAS SKILL */
+.skills-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* CARD */
+.cardSkill {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: 250px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espaço entre imagem e texto */
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cardSkill:hover {
+    transform: translateY(-14px);
+    border: 1px solid rgb(0, 98, 255);
+    box-shadow: 0 4px 8px rgba(55, 5, 255, 0.5);
+}
+.cardSkill img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.cardSkill span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Pintura individual dos card */
+
+/* HTML 5*/
+.skills .cardSkill:nth-child(3) {
+  background-color: #ffffff; 
+}
+
+.skills .cardSkill:nth-child(3) span {
+  color: #fc0808; 
+}
+
+/* CSS 3*/
+.skills .cardSkill:nth-child(4) {
+  background-color: #3554a2; 
+}
+
+.skills .cardSkill:nth-child(4) span {
+  color: #ffffff; 
+}
+
+/* Javascript */
+.skills .cardSkill:nth-child(5) {
+  background-color: #2f3544; 
+}
+
+.skills .cardSkill:nth-child(5) span {
+  color: #f4f400; 
+}
+
+/* JAVA <3 <3 <3 <3*/
+.skills .cardSkill:nth-child(6) {
+  background-color: #000000; 
+}
+
+.skills .cardSkill:nth-child(6) span {
+  color: #ffffff; 
+}
+
+/* Spring Boot*/
+.skills .cardSkill:nth-child(7) {
+  background-color: #2ca015; 
+}
+
+.skills .cardSkill:nth-child(7) span {
+  color: #ffffff; 
+}
+
+/* Python */
+.skills .cardSkill:nth-child(8) {
+  background-color: #fffb0b; 
+}
+
+.skills .cardSkill:nth-child(8) span {
+  color: #015fcb; 
+}
+
+/* MySQL */
+
+.skills .cardSkill:nth-child(9) {
+  background-color: #ac9898; 
+}
+
+.skills .cardSkill:nth-child(9) span {
+  color: #03639e; 
+}
+
+/* GIT */
+
+.skills .cardSkill:nth-child(10) {
+  background-color: #b74718; 
+}
+
+.skills .cardSkill:nth-child(10) span {
+  color: #ffffff; 
+}
+
+/*============================== ABA DE PROJETOS ================================*/
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 20px;
+  min-height: 400px;
+  background-color: #100e0e;
+}
+
+/* Título da section */
+.project-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Container dos projetos */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/*Título de cada card */
+.desc {
+  color: rgb(1, 118, 243);
+}
+
+/* Cada card */
+.card-projects {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Link para os projetos */
+.card-projectsd a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Imagem dos cantos de cada card */
+.card-projects img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.card-projects {
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:is(.card-projects:hover) .desc { 
+  color: #f2c201;
+}
+:is(.card-projects:hover) {
+  background-color: #30373e;
+}
+
+:is(.card-projects:hover) span {
+  color: rgb(255, 255, 255);
+}
+
+:is(.card-projects:hover) a { 
+  color: #f2c201;
+}
+
+/* ========================== FOOTER =========================================*/
+
+footer { 
+  position: relative;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  
+}
+
+.footer-text { 
+  padding-top: 25px;
+  color: #181717;
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}

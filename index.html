@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/style/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/style/responsive/mobile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-line" id="menu-line">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      
+        <div class="menu" id="btnTop">
+          <img src="src/assets/img/project-icon/up-arrow.png" alt="">
+        </div>
+    </div>
+
+    <div class="languages">
+      <button id="close">X</button>
+      <button onclick="translatePT()" >
+        <img src="src/assets/img/FlagIcon/BrazilFlag.png"     alt="Bandeira Brasil">
+      </button>
+      <button onclick="translateEs()">
+        <img src="src/assets/img/FlagIcon/spain.png" alt="Bandeira Espanha">
+      </button>
+        <button onclick="translateEng()">
+        <img src="src/assets/img/FlagIcon/UsaFlag.png" alt="Bandeira EUA">
+      </button>
+    </div>
+
+   <section class="main">
+  <div class="about">
+    <h1 id="aboutMe">ABOUT ME</h1>
+    <p id="description">
+      As a Full Stack Web Developer specializing in <strong>Spring Boot</strong> and <strong>JavaScript</strong>,
+      I am passionate about crafting beautiful, functional websites and applications that deliver results. Over the past
+      few years, I’ve been honing my skills in backend development using Java and Spring Boot, while also building dynamic
+      front-end experiences with modern JavaScript. I love working on creative projects, writing clean code, and continuously
+      learning new technologies to expand my capabilities. Whether it's developing REST APIs or designing user-friendly interfaces,
+      I aim to build meaningful, scalable solutions that meet real-world needs.
+    </p>
+    
+  </div>
+  <div class="ph">
+  <img src="src/assets/img/Eugatao.jpg" alt="Foto">
+
+  <div class="social-icons">
+  <a href="https://www.facebook.com/junior.scrobut.2025?rdid=N0tHmOtn0UZIlqHN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GXWqMgA5p%2F#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.linkedin.com/in/divonsir-scrobut" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://github.com/Divansir-Junior" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+</section>
+
+
+<section class="skills">
+  <h2 class="skills-title" id="skillsTitle" >MY SKILLS</h2>
+  <h2 class="skills-title" id="subTitleSkills">Technologies I've worked</h2>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/html5" alt="HTML5" />
+    <span>HTML 5</span>
+  </div>
+  <div class="cardSkill">
+    <img src="src/assets/img/languages/Css3Logo.png" alt="CSSs3" />
+    <span>CSS3</span>
+  </div>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" />
+    <span>JavaScript</span>
+  </div>
+  <div class="cardSkill">
+    <img src="src/assets/img/languages/JavaLogoo.png"  alt="Java" />
+    <span>Java</span>
+  </div>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/springboot" alt="Spring Boot" />
+    <span>Spring Boot</span>
+  </div>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/python" alt="Python" />
+    <span>Python</span>
+  </div>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" />
+    <span>MySQL</span>
+  </div>
+  <div class="cardSkill">
+    <img src="https://cdn.simpleicons.org/git" alt="Git" />
+    <span>Git</span>
+  </div>
+</section>
+
+<section class="projects">
+ <h2 class="project-title" id="projectsTitle">My Projects</h2>
+<h2 class="project-title" id="projectsSubTitle" >Projects I Have Already Developed</h2>
+
+<div class="projects-container">
+  <div class="card-projects">
+    <span class="desc">NET-SHOE</span>
+    <span>Spring Boot CRUD</span>
+    <span>Role : <strong>BackEnd</strong></span>
+    <a href="#" class="link" id="link1">View Project</a>
+    <img src="src/assets/img/project-icon/BackEnd.png" alt="Spring Boot CRUD">
+  </div>
+
+  <div class="card-projects">
+    <span class="desc">Full Stack TODO</span>
+    <span>A complete TO-DO program</span>
+    <span>Role : <strong>Full Stack</strong></span>
+    <a href="#" class="link" id="link2">View Project</a>
+    <img src="src/assets/img/project-icon/BackEnd.png" alt="Full Stack TODO">
+  </div>
+
+  <div class="card-projects">
+    <span class="desc">Coffizin</span>
+    <span>A web store of coffe</span>
+    <span>role : <strong>Full Stack</strong></span>
+    <a href="#" class="link" id="link3" >View Project</a>
+    <img src="src/assets/img/project-icon/BackEnd.png" alt="Web Store">
+  </div>
+</div>
+
+ <div class="card-projects">
+    <span class="desc">Check ur day space</span>
+    <span>View a photo of space taken at your birth</span>
+    <span>Role : Web </span>
+    <a href="#" class="link" id="link4">View Project</a>
+    <img src="src/assets/img/project-icon/FrontEnd.png" alt="Web Store">
+  </div>
+</div>
+</section>
+
+<footer>
+   <p class="footer-text">&copy; 2025 Divansir Junior — Full Stack Developer</p>
+</footer>
+
+<script type="module" src="src/scripts/Util/translate.js"></script>
+<script src="src/scripts/index.js"></script>
+<script src="src/scripts/Util/Redirect.js"></script>
+</body>
+</html>
