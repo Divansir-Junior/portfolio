@@ -16,6 +16,7 @@ function translate(lang) {
   document.getElementById("desc2").textContent = t.desc2;
   document.getElementById("desc3").textContent = t.desc3;
   document.getElementById("desc4").textContent = t.desc4;
+  document.querySelector(".footer-text").textContent = t.footerText;
   document.getElementById("roleWeb").textContent = t.roleWeb;
   document.getElementById("roleBackEnd").textContent = t.roleBackEnd;
   document.querySelectorAll(".roleFullStack").forEach(el => {

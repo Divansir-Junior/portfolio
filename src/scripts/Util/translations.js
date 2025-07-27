@@ -18,7 +18,8 @@ export const Translations = {
     roleFullStack : "ROLE : FULL STACK",
     desc2 : "A COMPLETE TO-DO PROGRAM",
     desc3 : "A WEB STORE OF COFFE",
-    desc4 : "VIEW A PHOTO OF SPACE TAKEN AT YOUR BIRTH"
+    desc4 : "VIEW A PHOTO OF SPACE TAKEN AT YOUR BIRTH",
+    footerText : "© 2025 Divansir Junior — Full Stack Developer"
   },
   es: {
     aboutMe: "Sobre mí",
@@ -38,7 +39,8 @@ export const Translations = {
     roleFullStack : "ÁREA : FULL STACK",
     desc2 : "UN PROGRAMA DE LISTA DE TAREAS COMPLETO",
     desc3 : "UNA CAFETERÍA ONLINE",
-    desc4 :  "MIRA UNA FOTO DEL ESPACIO EL DÍA QUE NACISTE"
+    desc4 :  "MIRA UNA FOTO DEL ESPACIO EL DÍA QUE NACISTE",
+    footerText : "© 2025 Divansir Junior — FULL STACK DESARROLADOR"
   },
   pt: {
     aboutMe: "Sobre mim",
@@ -58,6 +60,7 @@ export const Translations = {
     roleFullStack : "ÁREA : FULL STACK",
     desc2 : "UM PROGRAMA DE LISTA DE TAREFAS COMPLETO",
     desc3 : "UMA LOJA ONLINE DE CAFÉ",
-    desc4 : "VEJA UMA FOTO DO ESPAÇO NO DIA QUE VOCÊ NASCEU"
+    desc4 : "VEJA UMA FOTO DO ESPAÇO NO DIA QUE VOCÊ NASCEU",
+    footerText : "© 2025 Divansir Junior — DESENVOLVEDOR FULL STACK"
   }
 };
