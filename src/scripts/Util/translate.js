@@ -13,6 +13,9 @@ function translate(lang) {
   document.getElementById("subTitleSkills").textContent = t.Technologies;
   document.getElementById("projectsTitle").textContent = t.projectsTitle;
   document.getElementById("projectsSubTitle").textContent = t.projectsSubTitle;
+  document.getElementById("desc2").textContent = t.desc2;
+  document.getElementById("desc3").textContent = t.desc3;
+  document.getElementById("desc4").textContent = t.desc4;
   document.getElementById("roleWeb").textContent = t.roleWeb;
   document.getElementById("roleBackEnd").textContent = t.roleBackEnd;
   document.querySelectorAll(".roleFullStack").forEach(el => {
