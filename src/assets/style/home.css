@@ -277,11 +277,12 @@ section.main {
   text-transform: uppercase;
 }
 
-.cardSkill:hover {
+/*.cardSkill:hover {
     transform: translateY(-14px);
     border: 1px solid rgb(0, 98, 255);
     box-shadow: 0 4px 8px rgba(55, 5, 255, 0.5);
-}
+}*/
+
 .cardSkill img {
   width: 60px;
   height: 60px;
@@ -301,6 +302,12 @@ section.main {
   background-color: #ffffff; 
 }
 
+.skills .cardSkill:nth-child(3):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(255, 8, 8);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5);
+}
+
 .skills .cardSkill:nth-child(3) span {
   color: #fc0808; 
 }
@@ -310,6 +317,12 @@ section.main {
   background-color: #3554a2; 
 }
 
+.skills .cardSkill:nth-child(4):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(250, 249, 249);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
+}
+ 
 .skills .cardSkill:nth-child(4) span {
   color: #ffffff; 
 }
@@ -317,6 +330,12 @@ section.main {
 /* Javascript */
 .skills .cardSkill:nth-child(5) {
   background-color: #2f3544; 
+}
+
+.skills .cardSkill:nth-child(5):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(255, 234, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
 }
 
 .skills .cardSkill:nth-child(5) span {
@@ -328,6 +347,12 @@ section.main {
   background-color: #000000; 
 }
 
+.skills .cardSkill:nth-child(6):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(255, 119, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
+}
+
 .skills .cardSkill:nth-child(6) span {
   color: #ffffff; 
 }
@@ -337,6 +362,12 @@ section.main {
   background-color: #2ca015; 
 }
 
+.skills .cardSkill:nth-child(7):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(140, 255, 163);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
+}
+
 .skills .cardSkill:nth-child(7) span {
   color: #ffffff; 
 }
@@ -344,6 +375,12 @@ section.main {
 /* Python */
 .skills .cardSkill:nth-child(8) {
   background-color: #fffb0b; 
+}
+
+.skills .cardSkill:nth-child(8):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(0, 89, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
 }
 
 .skills .cardSkill:nth-child(8) span {
@@ -356,14 +393,25 @@ section.main {
   background-color: #ac9898; 
 }
 
+.skills .cardSkill:nth-child(9):hover {
+  transform: translateY(-14px);
+  border: 2px solid rgb(49, 89, 164);
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
+}
+
 .skills .cardSkill:nth-child(9) span {
   color: #03639e; 
 }
 
 /* GIT */
-
 .skills .cardSkill:nth-child(10) {
   background-color: #b74718; 
+}
+
+.skills .cardSkill:nth-child(10):hover {
+  transform: translateY(-14px);
+  border: 2px solid #ff5500;
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5); 
 }
 
 .skills .cardSkill:nth-child(10) span {
