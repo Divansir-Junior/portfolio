@@ -13,7 +13,9 @@ I aim to build meaningful, scalable solutions that meet real-world needs.",
     projectsTitle : "My Projects",
     projectsSubTitle : "Projects I Have Already Developed",
     link:"View Project",
-    role:"ROLE : BACKEND"
+    roleBackEnd:"ROLE : BACKEND",
+    roleWeb:"ROLE : FRONT-END",
+    roleFullStack : "ROLE : FULL STACK"
   },
   es: {
     aboutMe: "Sobre mí",
@@ -28,7 +30,9 @@ Ya sea desarrollando APIs REST o diseñando interfaces amigables, mi objetivo es
     projectsTitle: "MIS PROYECTOS",
     projectsSubTitle: "PROYECTOS QUE HE DESARROLLADO",
     link: "VER PROYECTO",
-    role:"ÁREA : BACKEND"
+    roleBackEnd:"ÁREA : BACKEND",
+    roleWeb:"ÁREA : FRONT-END",
+    roleFullStack : "ÁREA : FULL STACK"
   },
   pt: {
     aboutMe: "Sobre mim",
@@ -43,6 +47,8 @@ Seja desenvolvendo APIs REST ou projetando interfaces amigáveis, meu objetivo �
     projectsTitle : "MEUS PROJETOS",
     projectsSubTitle : "PROJETOS QUE JÁ DESENVOLVI",
     link: "VER PROJETO",
-    role:"AREA : BACKEND"
+    roleBackEnd:"ÁREA : BACKEND",
+    roleWeb:"ÁREA : FRONT-END",
+    roleFullStack : "ÁREA : FULL STACK"
   }
 };
