@@ -37,7 +37,7 @@ function openMenu() {
 
   function showMenu() {
     content.style.display = "flex";
-    content.classList.remove("fade-out"); // remove se estiver fechando antes
+    content.classList.remove("fade-out"); 
     content.classList.add("fade-in");
   }
 
@@ -45,7 +45,7 @@ function openMenu() {
     content.classList.remove("fade-in");
     content.classList.add("fade-out");
 
-    // Espera a animação terminar (400ms) antes de esconder o elemento
+    // Espera a animação terminar (400ms) antes de esconder
     setTimeout(() => {
       content.style.display = "none";
       content.classList.remove("fade-out");
@@ -58,15 +58,13 @@ function closeMenu() {
   const btnClose = document.getElementById("close");
   const btnOpenMenu = document.getElementById("menu-line");
 
-  // Fecha ao clicar no botão fechar
   btnClose.addEventListener("click", () => {
     content.style.display = "none";
     btnClose.style.display = "none";
   });
 
-  // Fecha ao clicar fora do menu (e fora do botão de abrir)
+  // Fecha ao clicar fora do menu 
   document.addEventListener("click", (event) => {
-    // Se menu não está aberto, não precisa fazer nada
     if (content.style.display !== "flex") return;
 
     const clickInsideMenu = content.contains(event.target);

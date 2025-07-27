@@ -13,6 +13,7 @@ function translate(lang) {
   document.getElementById("subTitleSkills").textContent = t.Technologies;
   document.getElementById("projectsTitle").textContent = t.projectsTitle;
   document.getElementById("projectsSubTitle").textContent = t.projectsSubTitle;
+  document.getElementById("role").textContent = t.role;
   document.querySelectorAll(".link").forEach(el => {
     el.textContent = t.link;
   });

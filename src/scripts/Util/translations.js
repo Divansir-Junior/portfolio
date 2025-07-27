@@ -12,7 +12,8 @@ I aim to build meaningful, scalable solutions that meet real-world needs.",
     Technologies : "Technologies I've worked",
     projectsTitle : "My Projects",
     projectsSubTitle : "Projects I Have Already Developed",
-    link:"View Project"
+    link:"View Project",
+    role:"ROLE : BACKEND"
   },
   es: {
     aboutMe: "Sobre mí",
@@ -26,7 +27,8 @@ Ya sea desarrollando APIs REST o diseñando interfaces amigables, mi objetivo es
     Technologies: "TECNOLOGÍAS QUE HE UTILIZADO",
     projectsTitle: "MIS PROYECTOS",
     projectsSubTitle: "PROYECTOS QUE HE DESARROLLADO",
-    link: "VER PROYECTO"
+    link: "VER PROYECTO",
+    role:"ÁREA : BACKEND"
   },
   pt: {
     aboutMe: "Sobre mim",
@@ -40,6 +42,7 @@ Seja desenvolvendo APIs REST ou projetando interfaces amigáveis, meu objetivo �
     Technologies : "TECNOLOGIAS QUE JÁ TRABALHEI",
     projectsTitle : "MEUS PROJETOS",
     projectsSubTitle : "PROJETOS QUE JÁ DESENVOLVI",
-    link: "VER PROJETO"
+    link: "VER PROJETO",
+    role:"AREA : BACKEND"
   }
 };
